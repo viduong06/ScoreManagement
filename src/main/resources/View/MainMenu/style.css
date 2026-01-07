@@ -1,0 +1,8 @@
+.sliderColor{
+    -fx-background-color: linear-gradient(#0F5BA5,#F3F3F3);
+}
+.hover:hover{
+    -fx-background-color: rgba(255, 0, 0, 0.3);
+    -fx-opacity: 0.8;
+    -fx-cursor: hand;
+}

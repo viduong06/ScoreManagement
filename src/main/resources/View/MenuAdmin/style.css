@@ -1,0 +1,46 @@
+.background{
+    -fx-background-image: url("/Store_Image/background.jpg");
+    -fx-background-size: cover;       
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center center;
+}
+.background-1{
+    -fx-background-image: url("/Store_Image/background-1.jpg");
+    -fx-background-size: cover;      
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center center;
+}
+.qlySV{
+    -fx-background-color: #66ff66;
+}
+.qlyKH{
+    -fx-background-color: #ff3333;
+}
+.thongKe{
+    -fx-background-color: #999900;
+}
+.hover:hover{
+    -fx-background-color: rgba(255, 0, 0, 0.3);
+    -fx-opacity: 0.8;
+    -fx-cursor: hand;
+}
+.sliderColor{
+    -fx-background-color:  linear-gradient(#87CEEB,#E6F4FF);
+}
+.hover:hover{
+    -fx-background-color: rgba(255, 0, 0, 0.3);
+    -fx-opacity: 0.8;
+    -fx-cursor: hand;
+}
+.border{
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+    -fx-background-insets : 0;
+}
+.formatField{
+    -fx-border-color:  #A7C7E7;
+    -fx-border-radius: 30;
+    -fx-background-insets: 0;
+    -fx-background-color: #FDFDFD;
+    -fx-background-radius: 30;
+}

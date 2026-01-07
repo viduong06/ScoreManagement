@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" minHeight="825.0" prefHeight="1015.0" prefWidth="1650.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.diemThiController">
+   <children>
+      <TextField fx:id="txtTimKiem" prefHeight="41.0" prefWidth="218.0" promptText="Tìm Kiếm..." AnchorPane.leftAnchor="0.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Button layoutX="643.0" layoutY="2.0" mnemonicParsing="false" onAction="#clickOnNhapDiem" prefHeight="39.0" prefWidth="187.0" style="-fx-background-color: #4BAE4F;" styleClass="hover" text="Nhập điểm" textFill="WHITE" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Store_Image/plus.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="227.0" mnemonicParsing="false" onAction="#clickOnTimKiem" prefHeight="41.0" prefWidth="142.0" style="-fx-background-color: #25CCF7;" styleClass="hover" text="Tìm kiếm" textFill="WHITE" AnchorPane.leftAnchor="219.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Store_Image/magnifier.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <TableView fx:id="tableDiemThi" layoutX="218.0" layoutY="40.0" prefHeight="803.0" prefWidth="1265.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="65.0">
+        <columns>
+          <TableColumn fx:id="colMSSV" prefWidth="163.0" text="MSSV" />
+          <TableColumn fx:id="colTen" prefWidth="323.0" text="Tên sinh viên" />
+            <TableColumn fx:id="colDGK1" prefWidth="186.0" text="Điểm thường kì 1" />
+            <TableColumn fx:id="colDGK2" minWidth="0.0" prefWidth="180.0" text="Điểm thường kì 2" />
+            <TableColumn fx:id="colDCK" prefWidth="195.0" text="Điểm cuối kì" />
+            <TableColumn fx:id="colDTK" prefWidth="217.0" text="Điểm tổng kết" />
+        </columns>
+      </TableView>
+      <ComboBox fx:id="cbMaLop" layoutX="219.0" layoutY="40.0" onAction="#chooseClass" prefWidth="150.0" />
+      <Label layoutY="44.0" prefHeight="25.0" prefWidth="212.0" text="Danh sách lớp quản lý" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="40.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="913.0" layoutY="8.0" mnemonicParsing="false" onAction="#clickRefresh" style="-fx-background-color: #3498db;" styleClass="hover" stylesheets="@style.css" text="Làm mới" textFill="WHITE" AnchorPane.rightAnchor="180.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Store_Image/refresh-arrow.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

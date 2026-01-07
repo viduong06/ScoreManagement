@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" minHeight="825.0" prefHeight="1015.0" prefWidth="1650.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.qlyGiangVienController">
+   <children>
+      <TextField fx:id="txtTimKiem" promptText="Tìm kiếm..." AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Button layoutX="754.0" layoutY="16.0" mnemonicParsing="false" onAction="#clickOnThemGiangVien" style="-fx-background-color: #4BAE4F;" styleClass="hover" text="Thêm giảng viên" textFill="WHITE" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Store_Image/plus.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="235.0" layoutY="14.0" mnemonicParsing="false" onAction="#clickOnTimKiem" style="-fx-background-color: #25CCF7;" styleClass="hover" text="Tìm kiếm" textFill="WHITE" AnchorPane.leftAnchor="227.0" AnchorPane.topAnchor="0.0">
+         <graphic>
+            <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Store_Image/magnifier.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tableGiangVien" layoutX="36.0" layoutY="20.0" prefHeight="830.0" prefWidth="1265.0" AnchorPane.bottomAnchor="-0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0">
+        <columns>
+          <TableColumn fx:id="colMaGiangVien" prefWidth="285.0" text="Mã giảng viên" />
+          <TableColumn fx:id="colTenGiangVien" minWidth="0.0" prefWidth="255.0" text="Tên giảng viên" />
+            <TableColumn fx:id="colEmail" prefWidth="281.0" text="Email" />
+            <TableColumn fx:id="colSDT" prefWidth="183.0" text="Số điện thoại" />
+            <TableColumn fx:id="colMaKhoa" prefWidth="260.0" text="Mã Khoa" />
+        </columns>
+      </TableView>
+      <Button layoutX="970.0" layoutY="7.0" mnemonicParsing="false" onAction="#clickOnXoaGiangVien" prefHeight="39.0" prefWidth="194.0" style="-fx-background-color: #e74c3c;" styleClass="hover" stylesheets="@style.css" text="Xoá giảng viên" textFill="WHITE" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="0.0">
+         <graphic>
+            <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Store_Image/bin.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,26 @@
+.background{
+    -fx-background-image: url("/Store_Image/background.jpg");
+    -fx-background-size: cover;       
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center center;
+}
+.background-1{
+    -fx-background-image: url("/Store_Image/background-1.jpg");
+    -fx-background-size: cover;      
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center center;
+}
+.qlySV{
+    -fx-background-color: #66ff66;
+}
+.qlyKH{
+    -fx-background-color: #ff3333;
+}
+.thongKe{
+    -fx-background-color: #999900;
+}
+.hover:hover{
+    -fx-background-color: rgba(255, 0, 0, 0.3);
+    -fx-opacity: 0.8;
+    -fx-cursor: hand;
+}
